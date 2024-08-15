@@ -1,0 +1,29 @@
+id: https://ArchiMate.CIM4.eu/ns/1.0#
+name: ArchiMate
+title: ArchiMate Vocabulary
+annotations:
+  copyright: "Copyright 2024 Svein Olsen: Apache-2.0"
+prefixes:
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  linkml: https://w3id.org/linkml/
+  sh: http://www.w3.org/ns/shacl#
+  skos: http://www.w3.org/2004/02/skos/core#
+  this: https://ArchiMate.CIM4.eu/ns/1.0#
+  dc: http://purl.org/dc/elements/1.1/
+  owl: http://www.w3.org/2002/07/owl#
+  dct: http://purl.org/dc/terms/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  dcat: http://www.w3.org/ns/dcat#
+  arc: https://ArchiMate.CIM4.eu/ns#
+imports:
+- linkml:types
+default_curi_maps:
+- semweb_context
+default_range: string
+default_prefix: this
+classes:
+  BusinessFunction:
+    description: "A business function represents a collection of business behavior based on a chosen set of criteria such as required business resources and/or competencies, and is managed or performed as a whole."
+    is_a: BusinessInternalBehaviorElement
+    class_uri: arc:BusinessFunction
+    attributes: 
